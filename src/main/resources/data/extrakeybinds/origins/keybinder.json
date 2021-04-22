@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"beeorigin:death"
+	],
+	"icon": "minecraft:structure_void",
+	"order": 7,
+	"impact": 3,
+	"name": "Keybinder",
+	"description":"Template for the Extra Keybinds mod."
+}

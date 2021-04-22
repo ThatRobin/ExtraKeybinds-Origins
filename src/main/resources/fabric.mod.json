@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "extrakeybinds",
+  "version": "${version}",
+  "name": "CyaConnors Extra Origins Keybinds",
+  "description": "Adds more keybinds to the Origins mod.",
+  "authors": [
+    "CyaConnor"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/extrakeybinds/icon.png",
+  "environment": "*",
+  "entrypoints": {
+	"main": [
+	  "extrakeybinds.common.ExtraKeybinds"
+	]
+  },
+  "depends": {
+	"fabricloader": ">=0.11.0",
+	"fabric": "*",
+	"minecraft": "1.16.5",
+	"origins": ">=0.6.0"
+  }
+}

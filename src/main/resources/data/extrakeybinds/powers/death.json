@@ -1,0 +1,17 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+      "type": "origins:execute_command",
+      "command": "/tellraw @p [\"\",{\"text\":\"[ExtraOrigins]\",\"color\":\"green\"},\" Keybind 1 has been pressed!\"]",
+	  "permission_level": 4
+    },
+	"cooldown": 0,
+	"key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+	},
+	"hud_render": {
+		"should_render": false
+	},
+	"hidden": true
+}
