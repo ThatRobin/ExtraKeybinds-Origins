@@ -11,7 +11,7 @@
   "icon": "assets/extrakeybinds/icon.png",
   "environment": "*",
   "entrypoints": {
-	"main": [
+	"client": [
 	  "extrakeybinds.common.ExtraKeybinds"
 	]
   },
