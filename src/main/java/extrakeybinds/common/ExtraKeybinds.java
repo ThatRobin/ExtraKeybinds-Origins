@@ -1,12 +1,12 @@
 package extrakeybinds.common;
 
-import io.github.apace100.apoli.ApoliClient;
 import io.github.apace100.origins.Origins;
-import net.fabricmc.api.ModInitializer;
+import io.github.apace100.origins.OriginsClient;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.options.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
+import net.fabricmc.api.ModInitializer;
 
 public class ExtraKeybinds implements ModInitializer {
 
@@ -22,43 +22,43 @@ public class ExtraKeybinds implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		useTernaryActivePowerKeybind = new KeyBinding("key.origins.ternary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.ternary_active", useTernaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("ternary", useTernaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.ternary_active", useTernaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("ternary", useTernaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useTernaryActivePowerKeybind);
 
 		useQuaternaryActivePowerKeybind = new KeyBinding("key.origins.quaternary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.quaternary_active", useQuaternaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("quaternary", useQuaternaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.quaternary_active", useQuaternaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("quaternary", useQuaternaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useQuaternaryActivePowerKeybind);
 
 		useQuinaryActivePowerKeybind = new KeyBinding("key.origins.quinary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.quinary_active", useQuinaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("quinary", useQuinaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.quinary_active", useQuinaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("quinary", useQuinaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useQuinaryActivePowerKeybind);
 
 		useSenaryActivePowerKeybind = new KeyBinding("key.origins.senary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.senary_active", useSenaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("senary", useSenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.senary_active", useSenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("senary", useSenaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useSenaryActivePowerKeybind);
 
 		useSeptenaryActivePowerKeybind = new KeyBinding("key.origins.septenary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.septenary_active", useSeptenaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("septenary", useSeptenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.septenary_active", useSeptenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("septenary", useSeptenaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useSeptenaryActivePowerKeybind);
 
 		useOctonaryActivePowerKeybind = new KeyBinding("key.origins.octonary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.octonary_active", useOctonaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("octonary", useOctonaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.octonary_active", useOctonaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("octonary", useOctonaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useOctonaryActivePowerKeybind);
 
 		useNonaryActivePowerKeybind = new KeyBinding("key.origins.nonary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.nonary_active", useNonaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("nonnary", useNonaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.nonary_active", useNonaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("nonnary", useNonaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useNonaryActivePowerKeybind);
 
 		useDenaryActivePowerKeybind = new KeyBinding("key.origins.denary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
-		ApoliClient.registerPowerKeybinding("key.origins.denary_active", useDenaryActivePowerKeybind);
-		ApoliClient.registerPowerKeybinding("denary", useDenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("key.origins.denary_active", useDenaryActivePowerKeybind);
+		OriginsClient.registerPowerKeybinding("denary", useDenaryActivePowerKeybind);
 		KeyBindingHelper.registerKeyBinding(useDenaryActivePowerKeybind);
 	}
 }
