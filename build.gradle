@@ -1,10 +1,10 @@
 plugins {
-    id 'fabric-loom' version '0.8-SNAPSHOT'
+    id 'fabric-loom' version '0.10-SNAPSHOT'
     id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -12,28 +12,29 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "player ability lib"
-        url = "https://ladysnake.jfrog.io/artifactory/mods"
+        name = "Ladysnake Libs"
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
     }
     maven {
-        name = "fall flying lib"
-        url = "https://maven.cafeteria.dev"
+        url = 'https://maven.cafeteria.dev'
+        content {
+            includeGroup 'net.adriantodt.fabricmc'
+        }
     }
     maven {
-        name = "entity reach"
-        url = "https://maven.jamieswhiteshirt.com/libs-release/"
+        url "https://maven.jamieswhiteshirt.com/libs-release"
+        content {
+            includeGroup "com.jamieswhiteshirt"
+        }
     }
     maven {
-        name = "cloth config"
-        url = "https://maven.shedaniel.me/"
+        url "https://jitpack.io"
     }
     maven {
-        name = "mod menu"
-        url = "https://maven.terraformersmc.com/"
+        url "https://maven.shedaniel.me/"
     }
     maven {
-        name = "jitpack"
-        url = "https://jitpack.io"
+        url "https://maven.terraformersmc.com/"
     }
 }
 
@@ -43,6 +44,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+    modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${project.cca_version}"
+    modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${project.cca_version}"
 }
 
 processResources {
