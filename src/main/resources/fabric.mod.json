@@ -1,24 +1,25 @@
 {
-  "schemaVersion": 1,
-  "id": "extrakeybinds",
-  "version": "${version}",
-  "name": "ThatRobins Extra Origins Keybinds",
-  "description": "Adds more keybinds to the Origins mod.",
-  "authors": [
-    "ThatRobin3001"
-  ],
-  "license": "GPL-3.0",
-  "icon": "assets/extrakeybinds/icon.png",
-  "environment": "*",
-  "entrypoints": {
-	"client": [
-	  "extrakeybinds.common.ExtraKeybinds"
-	]
-  },
-  "depends": {
-	"fabricloader": ">=0.12.6",
-	"fabric": "*",
-	"minecraft": "1.18.*",
-	"origins": ">=1.2.0"
-  }
+    "schemaVersion": 1,
+    "id": "extrakeybinds",
+    "version": "${version}",
+    "name": "ThatRobins Extra Origins Keybinds",
+    "description": "Adds more keybinds to the Origins mod.",
+    "authors": [
+        "ThatRobin3001"
+    ],
+    "license": "GPL-3.0",
+    "icon": "assets/extrakeybinds/icon.png",
+    "environment": "*",
+    "entrypoints": {
+	    "client": [
+	        "io.github.thatrobin.extrakeybinds.client.ExtraKeybinds"
+	    ]
+    },
+    "depends": {
+	    "fabricloader": ">=0.11.3",
+	    "fabric": ">=0.34.0",
+	    "minecraft": ">=1.17",
+        "java": ">=17",
+        "origins": ">=1.0.0"
+    }
 }

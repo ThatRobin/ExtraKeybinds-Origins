@@ -1,7 +1,6 @@
-package extrakeybinds.common;
+package io.github.thatrobin.extrakeybinds.client;
 
 import io.github.apace100.apoli.ApoliClient;
-import io.github.apace100.origins.Origins;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
@@ -17,7 +16,7 @@ public class ExtraKeybinds implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		for(String key : keys) {
-			KeyBinding binding = new KeyBinding("key.origins."+key+"_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category." + Origins.MODID);
+			KeyBinding binding = new KeyBinding("key.origins."+key+"_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.origins");
 			ApoliClient.registerPowerKeybinding(binding.getTranslationKey(), binding);
 			ApoliClient.registerPowerKeybinding(key, binding);
 			KeyBindingHelper.registerKeyBinding(binding);
